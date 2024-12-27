@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ task.title }}</h1>
+<p>{{ task.description }}</p>
+<p>Категория: {{ task.category.name }}</p>
+<a href="/tasks">Назад к списку задач</a>
+{% endblock %}
